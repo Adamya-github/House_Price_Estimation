@@ -5,8 +5,8 @@ import numpy as np
 app = Flask(__name__)
 
 # Load model and scaler
-model = joblib.load('D:\Machine learning\house_price_prediction\model\house_price_model.pkl')
-scaler = joblib.load('D:\Machine learning\house_price_prediction\model\scaler.pkl')
+model = joblib.load('/model/house_price_model.pkl')
+scaler = joblib.load('/model/scaler.pkl')
 
 @app.route('/')
 def index():
