@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+</head>
+<body>
+    <h1>House Price Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="Overall Qual">Overall Qual: (1 to 10)</label>
+        <input type="text" id="Overall Qual" name="Overall Qual"><br><br>
+        <label for="Gr Liv Area">Gr Liv Area: (sprt ft)</label>
+        <input type="text" id="Gr Liv Area" name="Gr Liv Area"><br><br>
+        <label for="Total Bsmt SF">Total Bsmt SF:(sprt ft)</label>
+        <input type="text" id="Total Bsmt SF" name="Total Bsmt SF"><br><br>
+        <label for="1st Flr SF">1st Flr SF:(sprt ft)</label>
+        <input type="text" id="1st Flr SF" name="1st Flr SF"><br><br>
+        <label for="BsmtFin SF 1">BsmtFin SF 1:(sprt ft)</label>
+        <input type="text" id="BsmtFin SF 1" name="BsmtFin SF 1"><br><br>
+        <label for="2nd Flr SF">2nd Flr SF:(sprt ft)</label>
+        <input type="text" id="2nd Flr SF" name="2nd Flr SF"><br><br>
+        <label for="Lot Area">Lot Area:(sprt ft)</label>
+        <input type="text" id="Lot Area" name="Lot Area"><br><br>
+        <label for="Garage Cars">Garage Cars:(no. of count)</label>
+        <input type="text" id="Garage Cars" name="Garage Cars"><br><br>
+        <label for="Garage Area">Garage Area:(sprt ft)</label>
+        <input type="text" id="Garage Area" name="Garage Area"><br><br>
+        <label for="Year Built">Year Built:</label>
+        <input type="text" id="Year Built" name="Year Built"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    <h2>{{ prediction_text }}</h2>
+</body>
+</html>
